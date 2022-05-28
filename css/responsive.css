@@ -1,0 +1,120 @@
+@media (max-width: 991px){
+    .firstLink a, .lastLink a, #home_slider .owl-stage-outer .owl-stage .owl-item .item .slider-content .slider-text a{
+        font-size: 75px;
+    }
+
+    .middleLinks li a{
+        font-size: 24px;
+    }
+
+    .middleLinks li:not(:last-child){
+        margin-right: 45px;
+    }
+
+    .project_list .project_column{
+        height: 400px;
+    }
+
+    .footer_area .container{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px){
+    .firstLink a, .lastLink a, #home_slider .owl-stage-outer .owl-stage .owl-item .item .slider-content .slider-text a{
+        font-size: 60px;
+    }
+
+    .middleLinks li a{
+        font-size: 20px;
+    }
+
+    .middleLinks li:not(:last-child){
+        margin-right: 30px;
+    }
+
+    .inner_footer{
+        flex-direction: column;
+    }
+
+    .footer_left_sec{
+        margin-bottom: 10px;
+    }
+
+    .project_list .project_column{
+        height: 350px;
+    }
+
+    .introduction_area{
+        padding: 180px 0;
+    }
+
+    .introduction_area .intro_txt h3{
+        font-size: 32px;
+        line-height: 50px;
+    }
+
+    .introduction_area .intro_txt p{
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 600px){
+
+    .firstLink a, .lastLink a, #home_slider .owl-stage-outer .owl-stage .owl-item .item .slider-content .slider-text a{
+        font-size: 45px;
+    }
+    .middleLinks{
+        flex-wrap: wrap;
+    }
+    .middleLinks li{
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .middleLinks li:not(:last-child){
+        margin-right: 0;
+    }
+
+    .inner_footer{
+        font-size: 11px;
+    }
+
+    .footer_right_sec{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tel_div, .email_div{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #feature_slider .owl-stage-outer .owl-stage .owl-item .item .feature_text p{
+        text-align: center;
+    }
+
+    #feature_slider .owl-nav{
+        position: unset;
+    }
+
+    .project_list .project_column{
+        height: 270px;
+    }
+
+    .introduction_area .intro_txt h3{
+        font-size: 28px;
+        line-height: 46px;
+    }
+
+    .introduction_area .intro_txt p{
+        font-size: 15px;
+        line-height: 26px;
+    }
+}
+
