@@ -520,6 +520,8 @@ nav.showNav{
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 2;
+	width: 100%;
+	height: 100%;
 }
 
 .project_name a{
@@ -532,6 +534,20 @@ nav.showNav{
 	transition: 0.5s ease all;
 	text-decoration: none;
 	letter-spacing: 1.5px;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
 }
 
 
