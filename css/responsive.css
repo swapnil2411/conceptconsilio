@@ -1,3 +1,20 @@
+@media(min-width: 2000px){
+    .container{
+        max-width: 1700px;
+    }
+
+    .youtube_video iframe{
+        height: 680px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .container{
+        max-width: 768px;
+    }
+}
+
 @media (max-width: 991px){
     .firstLink a, .lastLink a, #home_slider .owl-stage-outer .owl-stage .owl-item .item .slider-content .slider-text a{
         font-size: 75px;
@@ -17,6 +34,64 @@
 
     .footer_area .container{
         max-width: 100%;
+    }
+
+    .tab_panels{
+        position: relative;
+    }
+
+    .tab_panels .tabs{
+        position: absolute;
+        display: block;
+        z-index: 1;
+        width: 100%;
+        background: #fff;
+        padding: 15px;
+        box-shadow: 1px 1px 5px #e6e6e6;
+        transition: .5s ease-in-out all;
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .tab_panels .tabs.showTabs{
+        height: fit-content;
+        opacity: 1;
+        visibility: visible;
+        
+    }
+
+    .tab_panels .tabs li{
+        padding: 8px 0;
+    }
+    .panel .img_grid .img_column .project_img{
+        height: 250px;
+    }
+
+    .project_listing_area {
+        padding: 100px 0 70px;
+    }
+
+    .project_details_content .project_left_detail .project_description{
+        font-size: 16px;
+    }
+
+    .youtube_video iframe{
+        height: 432px;
+        width: 100%;
+    }
+
+    .principal_partner_content p,
+    .our_award_content p,
+    .principal_partner_content a,
+    .our_award_content a{
+        font-size: 16px;
+        line-height: 31px;
+    }
+
+    .principal_partner_content a,
+    .our_award_content a{
+        line-height: 25px;
     }
 }
 
@@ -58,6 +133,51 @@
         font-size: 16px;
         line-height: 28px;
     }
+
+    .panel .img_grid .img_column{
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+
+    .project_details_content{
+        flex-wrap: wrap;
+    }
+
+    .project_details_content .project_right_detail{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .project_details_content .project_left_detail{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .youtube_video iframe{
+        height: 332px;
+        width: 100%;
+    }
+
+    .inner_our_principal_partner, .inner_our_award{
+        flex-wrap: wrap;
+    }
+
+    .inner_our_principal_partner .pricipal_partner_img,
+    .inner_our_award .our_award_img,
+    .inner_our_principal_partner .principal_partner_content,
+    .inner_our_award .our_award_content{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .inner_our_principal_partner .principal_partner_content,
+    .inner_our_award .our_award_content{
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 20px;
+    }
+    
 }
 
 @media (max-width: 600px){
@@ -115,6 +235,10 @@
     .introduction_area .intro_txt p{
         font-size: 15px;
         line-height: 26px;
+    }
+
+    .panel .img_grid .img_column .project_img {
+        height: 200px;
     }
 }
 
