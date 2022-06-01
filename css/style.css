@@ -47,12 +47,12 @@ table {
 
 .sec_header h3{
 	font-family: 'Outfit', sans-serif;
-	font-size: 15px;
+	font-size: 18px;
 	line-height: 26px;
 	font-weight: 300;
 	color: #414141;
 	text-transform: uppercase;
-	letter-spacing: 1.5px;
+	letter-spacing: 0.225em;
 	margin-bottom: 10px;
 }
 
@@ -727,6 +727,8 @@ nav.showNav{
 	padding: 150px 0 100px;
 }
 
+
+
 .tab_panels .tabs{
 	display: -webkit-box;
     display: -moz-box;
@@ -835,11 +837,6 @@ nav.showNav{
 .project_toggle{
 	height: 40px;
 	width: 40px;
-	display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
     -webkit-justify-content: center;
     -webkit-box-pack: center;
     justify-content: center;
@@ -849,6 +846,10 @@ nav.showNav{
 	border: 1px solid #E30016;
 	margin-bottom: 15px;
 	cursor: pointer;
+}
+
+.project_toggle{
+	display: none;
 }
 
 .project_toggle svg{
@@ -1028,4 +1029,169 @@ nav.showNav{
 
 .studio_area .sec_header{
 	text-align: center;
+}
+
+/* Detailed Pricipal & Partner Css */
+.inner_introduction_pricipal_partner{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	height: 100vh;
+}
+
+.inner_introduction_pricipal_partner .introduction_pricipal_partner_content{
+	flex: 0 0 45%;
+	max-width: 45%;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	-webkit-justify-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+
+.inner_introduction_pricipal_partner .introduction_pricipal_partner_content p{
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 34px;
+	width: 70%;
+	
+}
+
+
+.inner_introduction_pricipal_partner .introduction_pricipal_partner_img{
+	flex: 0 0 55%;
+	max-width: 55%;
+	/* background: url('../image/studio_01.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom; */
+	overflow: hidden;
+	height: 100vh;
+}
+
+.inner_introduction_pricipal_partner .introduction_pricipal_partner_img img{
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	position: relative;
+	object-position: bottom;
+}
+
+.inner_principals_main{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	-webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+	padding: 170px 0 90px;
+}
+
+.principal_header-02{
+	display: none;
+}
+
+.inner_principals_main .left_principal_main,
+.inner_principals_main .right_principal_main{
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.inner_principals_main .left_principal_main{
+ padding-right: 40px;
+}
+
+.inner_principals_main .right_principal_main{
+	padding-left: 40px;
+}
+
+.inner_principals_main .left_principal_main img,
+.inner_principals_main .right_principal_main img{
+	width: 100%;
+}
+
+.inner_principals_main .left_pricipal_content, .inner_principals_main .right_pricipal_content{
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 34px;
+	color: #414141;
+}
+
+/* Our Team */
+.our_team_area .sec_header h3{
+	text-align: center;
+	margin-bottom: 25px;
+	color: #000;
+}
+
+.our_team_area .our_team_content{
+	padding: 200px 0;
+}
+
+.our_team_area .our_team_content p{
+	font-weight: 300;
+	font-size: 25px;
+	line-height: 47px;
+	text-align: center;
+	color: #414141;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.team_partners{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	-webkit-justify-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+	flex-wrap: wrap;
+}
+
+.team_partners .individual_column{
+	flex: 0 0 25%;
+	max-width: 25%;
+	margin-bottom: 50px;
+}
+
+.team_partners .individual_column .partner_img{
+	height: 386px;
+}
+
+.team_partners .individual_column .partner_img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.team_partners .individual_column:not(:nth-child(4)){
+	padding-right: 20px
+}
+
+.team_partners .individual_column .partner_content .author{
+	font-weight: 300;
+	font-size: 15px;
+	color: #000;
+	line-height: 28px;
+	margin-top: 8px;
+}
+
+.team_partners .individual_column .partner_content .designation{
+	font-weight: 200;
+	font-size: 15px;
+	color: #000;
+	line-height: 28px;
 }
