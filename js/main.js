@@ -74,4 +74,18 @@ $(document).ready(function() {
       autoplayTimeout: 5000,
       navText: ["<span class='iconify' data-icon='iwwa:angle-left'></span>","<span class='iconify' data-icon='iwwa:angle-left' data-rotate='180deg'></span>"],
     })
+
+
+    $('.accordion_header').on('click', function(){
+      $(this).find('svg').toggleClass('rotation');
+      $(this).parent().siblings().find('svg').removeClass('rotation');
+
+      $(this).parent().find('.accordion_content').slideToggle(500, function(){
+        $(this).addClass('showContent');
+        $(this).parent().siblings().find('.accordion_content').slideUp(500, function(){
+          $(this).removeClass('showContent');
+        })
+      });
+    })
+    
 })

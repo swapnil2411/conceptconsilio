@@ -235,8 +235,8 @@ nav.showNav{
 
 .nav-toggler{
 	position: fixed;
-	top: 32px;
-	right: 32px;
+	top: 24px;
+	right: 24px;
 	z-index: 99;
 	cursor: pointer;
 }
@@ -1194,4 +1194,242 @@ nav.showNav{
 	font-size: 15px;
 	color: #000;
 	line-height: 28px;
+}
+
+/* Awards Area */
+.award_area{
+	padding: 100px 0 30px;
+}
+
+.award_area .sec_header{
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+.accordion_card .accordion_header h3{
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 34px;
+	color: #414141;
+}
+
+.accordion_area{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	-webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.accordion_card{
+	flex: 0 0 47%;
+	max-width: 47%;
+	margin-bottom: 50px;
+}
+
+.accordion_card .accordion_header{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	-webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+	-webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+	padding: 0;
+	border-bottom: 1px solid #000;
+	cursor: pointer;
+}
+
+.accordion_card .accordion_header.active{
+	color: #E30016;
+	border-bottom: 0.3px solid #E30016;
+}
+
+.accordion_card .accordion_header svg{
+	transition: 0.5s ease-in-out all;
+}
+
+.accordion_card .accordion_header svg.rotation{
+	transform: rotate(180deg);
+}
+
+.accordion_card .accordion_content{
+	padding: 10px 0;
+	display: none;
+}
+
+.accordion_card .accordion_content.showContent{
+	display: block;
+}
+
+/* Contact Form Css */
+.inner_contact_sec{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	-webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+	padding: 100px 0 180px;
+}
+
+.inner_contact_sec .contact_info,
+.inner_contact_sec .contact_form{
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.inner_contact_sec .contact_info{
+	padding-right: 45px;
+}
+
+.inner_contact_sec .contact_form{
+	padding-left: 45px;
+}
+
+.contact_description{
+	margin: 10px 0 50px;
+}
+
+.contact_description .phone,
+.contact_description .email{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	-webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.contact_description .phone span:nth-child(1),
+.contact_description .email span:nth-child(1){
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 27px;
+	color: #414141;
+	flex: 0 0 30%;
+	max-width: 30%;
+	border-right: 1px solid #000;
+}
+
+.contact_description .phone span a,
+.contact_description .email span a{
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 27px;
+	color: #E30016;
+	text-decoration: none;
+}
+
+/* .contact_description .phone span,
+.contact_description .email span{
+	border-right: 1px solid #000;
+} */
+
+.contact_description .phone span:nth-child(2),
+.contact_description .email span:nth-child(2){
+	padding-left: 35px;
+}
+
+.office_add{
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 27px;
+	color: #414141;
+	margin-bottom: 8px;
+}
+
+.navigation_link{
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 27px;
+	color: #E30016;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+
+.office_list{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	flex-wrap: wrap;
+}
+
+.office_list span{
+	flex: 0 0 33.33%;
+	max-width: 33.33%;
+}
+
+.office_list span a{
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 27px;
+	text-decoration: none;
+	color: #E30016;
+	margin-bottom: 7px;
+	display: inline-block;
+}
+
+.enquiry_para{
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 27px;
+	color: #414141;
+	margin-bottom: 45px;
+}
+
+.contact_form form input{
+	width: 90%;
+	border: none;
+	border-bottom: 0.3px solid #000;
+	height: 35px;
+	margin-bottom: 18px;
+}
+
+.contact_form form input:focus{
+	border: none;
+	border-bottom: 0.3px solid #E30016;
+	outline: none;
+}
+
+.contact_form form input::placeholder,
+.contact_form form input{
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 27px;
+	color: #414141;
+}
+
+
+.contact_form form button{
+	border: 1px solid #E30016;
+	height: 35px;
+	width: 105px;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 27px;
+	color: #E30016;
+	background: transparent;
+	margin-top: 25px;
+	border-radius: 100px;
+}
+
+.contact_form form button:focus{
+	border: 1px solid #E30016;
+	outline: none;
+	box-shadow: none;
 }
