@@ -5,6 +5,9 @@ $(document).ready(function() {
       $('main').addClass('showWeb');
     }, 5000);
 
+    // Animation
+    new WOW().init();
+
     $('.nav-toggler').on('click', function(){
       $('header').toggleClass('showHeader');
       $('nav').toggleClass('showNav')
@@ -86,6 +89,20 @@ $(document).ready(function() {
           $(this).removeClass('showContent');
         })
       });
+    })
+
+    $('body').on('click', '.sort_box', function(){
+      $('.sort_option_area').slideToggle(300, function(){
+        $(this).toggleClass('showSort');
+      })
+    })
+    
+    $('body').on('click', '.sort_option_area ul li', function(){
+      var selectedValue = $(this).html();
+      $('.select_name').text(selectedValue);
+      $('.sort_option_area').slideToggle(300, function(){
+        $(this).toggleClass('showSort');
+      })
     })
     
 })

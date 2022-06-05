@@ -1,11 +1,61 @@
-@media(min-width: 1920px){
+@media(min-width: 1680px){
     .container{
-        max-width: 1700px;
+        max-width: 1600px;
+    }
+
+    .sec_header h3 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .middleLinks li a{
+        font-size: 32px;
+    }
+
+    .firstLink a,
+    .lastLink a,
+    #home_slider .owl-stage-outer .owl-stage .owl-item .item .slider-content .slider-text a{
+        font-size: 125px;
+    }
+
+    .introduction_area .intro_txt h3 {
+        font-size: 48px;
+        line-height: 72px;
+    }
+
+    .introduction_area .intro_txt p {
+        font-size: 24px;
+        line-height: 44px;
+        width: 85%;
+    }
+
+    #feature_slider .owl-stage-outer .owl-stage .owl-item .item .feature_text{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .project_name a{
+        font-size: 20px;
+    }
+
+    .project_list .project_column{
+        flex: 0 0 31.33%;
+        max-width: 31.33%;
     }
 
     .youtube_video iframe{
         height: 680px;
         width: 100%;
+    }
+
+    .inner_footer{
+        font-size: 18px;
+    }
+
+    .footer_right_sec .social_link ul li{
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -19,12 +69,29 @@
     .team_partners .individual_column .partner_img {
         height: 320px;
     }
+
+    .career_success_story .sucess_story_points ul li{
+        font-size: 16px;
+        padding: 0 10px;
+    }
 }
 
 @media (max-width: 991px){
+
+
+    .introduction_area .intro_txt h3{
+        font-size: 32px;
+        line-height: 56px;
+    }
+
+    .introduction_area .intro_txt p{
+        font-size: 16px;
+        line-height: 29px;
+    }
+
     .news_announcement_area .sec_header,
     .studio_area .sec_header{
-        margin-bottom: 70px;
+        margin-bottom: 50px;
     }
 
     .firstLink a, .lastLink a, #home_slider .owl-stage-outer .owl-stage .owl-item .item .slider-content .slider-text a{
@@ -178,12 +245,90 @@
     .news_details_content{
         margin-bottom: 120px;
     }
+
+    .blogs_flex_area .blog_column .blog_img{
+        height: 330px;
+    }
+
+    .blogs_details_content .blog_details_left .blog_title{
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .blogs_details_content .blog_details_left p{
+        font-size: 16px;
+    }
+
+    .blogs_details_content .blog_details_left{
+        flex: 0 0 70%;
+        max-width: 70%;
+        padding-right: 30px;
+    }
+
+    .blogs_details_content .blog_details_right{
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+
+    .blogs_details_content .blog_details_right .specifc_category_blogs_list .category_blog_list,
+    .blogs_details_content .blog_details_right .blogs_category .category_header{
+        font-size: 15px;
+    }
+
+    .blogs_details_content .blog_details_right .specifc_category_blogs_list .list_blogs li a,
+    .blogs_details_content .blog_details_right .blogs_category .category_list li a,
+    .blogs_breadcrumb a{
+        font-size: 14px;
+    }
+
+    .inner_main_career_info .career_company_content .career_para p{
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .career_form form .form_element{
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+
+    .career_form form .form_element input::placeholder,
+    .sort_box p,
+    .sort_option_area ul li,
+    .cover_letter label:nth-child(1), .resume label:nth-child(1){
+        font-size: 16px;
+    }
+
+    .career_success_story .career_success_header h3{
+        font-size: 32px;
+        line-height: 62px;
+    }
+
+    .career_success_story .sucess_story_points ul li{
+        margin-bottom: 25px;
+    }
+
+    .career_success_story .sucess_story_points ul li:nth-child(5){
+        padding-left: 10px;
+    }
+    .career_success_story .sucess_story_points ul li:nth-child(4){
+        padding-left: 0;
+        padding-right: 10px;
+    }
+
+    .career_success_story .sucess_story_points ul li:nth-child(3),
+    .career_success_story .sucess_story_points ul li:nth-child(6){
+        border-right: none;
+    }
+
+    .career_success_story .sucess_story_points ul li:nth-child(4){
+        border-right: 1px solid #E30016;
+    }
 }
 
 @media (max-width: 767px){
     .news_announcement_area .sec_header,
     .studio_area .sec_header{
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
     .firstLink a, .lastLink a, #home_slider .owl-stage-outer .owl-stage .owl-item .item .slider-content .slider-text a{
@@ -409,6 +554,107 @@
     .news_details_content{
         margin-bottom: 100px;
     }
+
+    .blogs_flex_area .blog_column{
+        flex: 0 0 48%;
+        max-width: 48%;
+        margin-bottom: 40px;
+    }
+
+    .blogs_flex_area .blog_column .blog_img{
+        height: 330px;
+    }
+
+    .blogs_details_content{
+        margin: 30px 0 80px;
+    }
+
+    .blogs_details_content .blog_details_left .blog_title{
+        margin-bottom: 25px;
+        font-size: 28px;
+    }
+
+    .blogs_details_content .blog_details_left{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 0px;
+    }
+
+    .blogs_details_content .blog_details_left p{
+        font-size: 14px;
+    }
+
+    .blogs_details_content .blog_details_right{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 25px;
+    }
+
+    .blogs_details_content .blog_details_right .specifc_category_blogs_list .list_blogs li a, .blogs_details_content .blog_details_right .blogs_category .category_list li a, .blogs_breadcrumb a{
+        font-size: 13px;
+    }
+
+    .blogs_details_content .blog_details_right .specifc_category_blogs_list,
+    .blogs_details_content .blog_details_right .blogs_category{
+        width: 100%;
+    }
+
+    .career_main_info{
+        height: 100%;
+    }
+
+    .inner_main_career_info{
+        flex-wrap: wrap;
+    }
+
+    .inner_main_career_info .career_company_img{
+        height: 100vh;
+    }
+
+    .inner_main_career_info .career_company_img,
+    .inner_main_career_info .career_company_content{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .inner_main_career_info .career_company_content{
+       margin: 30px 0;
+        padding-left: 0 !important;
+        text-align: center;
+    }
+
+    .inner_main_career_info .career_company_content .career_para{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .career_form form .form_element{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .career_success_story .career_success_header h3 {
+        font-size: 28px;
+        line-height: 46px;
+    }
+
+    .career_success_story .sucess_story_points ul li:nth-child(even),
+    .career_success_story .sucess_story_points ul li:nth-child(4){
+        padding-right: 0;
+        border-right: none;
+    }
+
+    .career_success_story .sucess_story_points ul li:nth-child(3){
+        border-right: 1px solid #E30016;
+    }
+
+    .career_success_story .sucess_story_points ul li:nth-child(odd){
+        padding-left: 0;
+    }
+
+    .career_success_story .sucess_story_points ul li:nth-child(4){
+        padding-left: 10px;
+    }
 }
 
 @media (max-width: 600px){
@@ -575,10 +821,77 @@
     .news_details_area .news_date{
         font-size: 14px;
     }
+
+    .blogs_flex_area .blog_content .blog_name, .blogs_flex_area .blog_content .blog_name a{
+        font-size: 16px;
+    }
+
+    .blogs_flex_area .blog_content .blog_date_category span{
+        display: block;
+        padding: 0 !important;
+        border: none !important;
+        font-size: 12px;
+    }
+
+    .blogs_flex_area .blog_content .blog_description p{
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .blogs_flex_area  .blog_content .blog_description a.blogReadMore{
+        font-size: 14px;
+    }
+
+    .career_success_story .career_success_header h3{
+        font-size: 26px;
+        line-height: 44px;
+        text-align: left;
+    }
+
+    .inner_main_career_info .career_company_content .career_para{
+        width: 90%;
+    }
+
+    .inner_main_career_info .career_company_content .career_para p,
+    .career_form form .form_element input::placeholder,
+    .sort_box p, .sort_option_area ul li,
+    .cover_letter label:nth-child(1),
+    .resume label:nth-child(1){
+        font-size: 14px;
+    }
+
+    .career_success_story .sucess_story_points ul{
+        flex-direction: column;
+    }
+
+    .career_success_story .sucess_story_points ul li{
+        border-right: none !important;
+        padding-left: 0 !important;
+        padding-left: 10px !important;
+        border-left: 2px solid #E30016 !important;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 480px){
     .news_column .news_img{
         height: 220px;
+    }
+
+    .blogs_flex_area .blog_column .blog_img{
+        height: 250px;
+    }
+
+    .letter-flex{
+        flex-wrap: wrap;
+    }
+
+    .cover_letter, .resume{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .cover_letter{
+        margin-bottom: 20px;
     }
 }
