@@ -1,12 +1,16 @@
 $(document).ready(function() {
 
 
+   // Animation
+   new WOW().init();
+   
     setTimeout(() => {
+      $('.preloader_area').addClass('hidePreloader');
       $('main').addClass('showWeb');
-    }, 5000);
+      new WOW().init();
+    }, 7000);
 
-    // Animation
-    new WOW().init();
+   
 
     $('.nav-toggler').on('click', function(){
       $('header').toggleClass('showHeader');
@@ -74,7 +78,7 @@ $(document).ready(function() {
       dots: false,
       animateOut: 'fadeOut',
       autoplay: true,
-      autoplayTimeout: 5000,
+      autoplayTimeout: 3000,
       navText: ["<span class='iconify' data-icon='iwwa:angle-left'></span>","<span class='iconify' data-icon='iwwa:angle-left' data-rotate='180deg'></span>"],
     })
 
