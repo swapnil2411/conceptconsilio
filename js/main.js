@@ -1,6 +1,9 @@
 $(document).ready(function() {
 
 
+  //screen size
+  var screenSize = $(window).width();
+  
    // Animation
    new WOW().init();
    
@@ -108,5 +111,26 @@ $(document).ready(function() {
         $(this).toggleClass('showSort');
       })
     })
+
+    if (screenSize <= 767) {
+      //alert("1680 reached")
+      $('.blogs_flex_area .blog_column:nth-child(2n+2)').addClass('animationDelay1');
+      $('.project_list .project_column:nth-child(2n+2)').addClass('animationDelay1');
+    }
+
+    if (screenSize >= 768 && screenSize <= 1679) {
+      //alert("1680 reached")
+      $('.blogs_flex_area .blog_column:nth-child(3n+2)').addClass('animationDelay1');
+      $('.project_list .project_column:nth-child(2n+2)').addClass('animationDelay1');
+      $('.blogs_flex_area .blog_column:nth-child(3n+3)').addClass('animationDelay2');
+    }
+
     
+    if (screenSize >= 1680) {
+      //alert("1680 reached")
+      $('.blogs_flex_area .blog_column:nth-child(4n+2)').addClass('animationDelay1');
+      $('.project_list .project_column:nth-child(3n+3)').addClass('animationDelay2')
+      $('.blogs_flex_area .blog_column:nth-child(4n+3)').addClass('animationDelay2');
+      $('.blogs_flex_area .blog_column:nth-child(4n+4)').addClass('animationDelay3');
+    }
 })

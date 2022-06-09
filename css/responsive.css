@@ -3,6 +3,11 @@
         max-width: 1600px;
     }
 
+    /* .career_form .container,
+    .career_success_story .container{
+        max-width: 1140px;
+    } */
+
     .sec_header h3 {
         font-size: 24px;
         line-height: 30px;
@@ -167,6 +172,50 @@
     .floor_plan_area .team_credit{
         font-size: 19px;
         line-height: 30px;
+    }
+
+    .career_form form .form_element input::placeholder,
+    .cover_letter label:nth-child(1), .resume label:nth-child(1),
+    .sort_box p,
+    .sort_option_area ul li,
+    .contact_description .phone span:nth-child(1), .contact_description .email span:nth-child(1),
+    .contact_description .phone span a, .contact_description .email span a,
+    .office_add,
+    .navigation_link,
+    .office_list span a,
+    .enquiry_para,.contact_form form input::placeholder,
+    .contact_form form button{
+        font-size: 22px;
+    }
+
+    .contact_description .phone span:nth-child(1), .contact_description .email span:nth-child(1),
+    .contact_description .phone span a, .contact_description .email span a,
+    .office_add,
+    .office_list span a,
+    .enquiry_para,.contact_form form input,
+    .contact_form form button{
+        line-height: 33px;
+    }
+
+
+    .contact_form form button{
+        height: 40px;
+        width: 110px;
+    }
+    
+
+    .contact_form form input{
+        margin-bottom: 22px;
+    }
+
+    .career_success_story .career_success_header h3 {
+        line-height: 90px;
+        font-size: 60px;
+    }
+
+    .career_success_story .sucess_story_points ul li {
+        font-size: 20px;
+        line-height: 28px;
     }
 
     .inner_footer{
