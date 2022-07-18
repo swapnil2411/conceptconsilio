@@ -14,8 +14,12 @@
         margin-bottom: 20px;
     }
 
+    nav{
+        padding-left: 150px;
+    }
+
     .middleLinks li a{
-        font-size: 32px;
+        font-size: 45px;
     }
 
     .firstLink a,
@@ -246,6 +250,45 @@
     }
 }
 
+@media (max-width: 1366px){
+    .middleLinks li a{
+        font-size: 36px;
+    }
+
+    .middleLinks li:not(:last-child) a{
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 1280px){
+    nav{
+        padding-left: 80px;
+    }
+
+    .home_red a{
+        margin-bottom: 70px;
+    }
+
+    .middleLinks li a{
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .middleLinks li:not(:last-child) a{
+        margin-bottom: 10px;
+    }
+
+    nav .footer_right_sec .tel_div,
+    nav .footer_right_sec .email_div, 
+    nav .footer_right_sec .social_link{
+        margin-bottom: 7px;
+    }
+
+    .middleLinks{
+        margin-bottom: 70px;
+    }
+}
+
 @media (max-width: 1200px){
     .team_partners .individual_column .partner_img {
         height: 320px;
@@ -258,6 +301,9 @@
 }
 
 @media (max-width: 991px){
+    nav .footer_right_sec .tel_div, nav .footer_right_sec .email_div, nav .footer_right_sec .social_link{
+        font-size: 14px;
+    }
 
     .studio_area, .blogs_listing_area {
         padding: 120px 0 80px;
@@ -520,6 +566,14 @@
 
     .container{
         max-width: 100%;
+    }
+
+    header{
+        width: 100vw;
+    }
+
+    nav .footer_right_sec .tel_div, nav .footer_right_sec .email_div, nav .footer_right_sec .social_link{
+        font-size: 12px;
     }
 
     .studio_area, .blogs_listing_area {
@@ -941,6 +995,36 @@
 }
 
 @media (max-width: 600px){
+    nav{
+        padding: 55px 20px;
+    }
+
+    .close_navbar{
+        top: 20px;
+        right: 0px;
+    }
+
+    .home_red a{
+        -webkit-justify-content: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        font-size: 15px;
+    }
+
+    .home_red a svg{
+        font-size: 22px;
+    }
+
+    .middleLinks li a {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .middleLinks li a{
+        font-weight: 400;
+    }
+
+
     .news_announcement_area .sec_header,
     .studio_area .sec_header{
         margin-bottom: 30px;

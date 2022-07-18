@@ -20,12 +20,16 @@ $(document).ready(function() {
 
     $('.nav-toggler').on('click', function(){
       $('header').toggleClass('showHeader');
-      $('nav').toggleClass('showNav')
+      $('nav').toggleClass('showNav');
+      $('.close_navbar').css('display', 'flex');
+      $(this).css('display','none')
     })
 
     $('.close_navbar').on('click', function(){
       $('header').removeClass('showHeader');
-      $('nav').removeClass('showNav')
+      $('nav').removeClass('showNav');
+      $('.nav-toggler').css('display', 'block');
+      $(this).css('display','none');
     })
 
     var slider = $('#home_slider');
