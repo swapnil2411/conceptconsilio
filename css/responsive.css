@@ -49,6 +49,18 @@
         max-width: 31.33%;
     }
 
+    .panel .innerTabs li{
+        font-size: 17px;
+    }
+
+    .panel .img_grid .img_column .project_img{
+        height: 460px;
+    }
+
+    .panel .img_grid .img_column .project_identity a{
+        font-size: 18px;
+    }
+
     .inner_our_principal_partner .pricipal_partner_img img,
     .inner_our_award .our_award_img img{
         width: 100%;
@@ -305,7 +317,7 @@
         position: relative;
     }
 
-    .tab_panels .tabs{
+    /* .tab_panels .tabs{
         position: absolute;
         display: block;
         z-index: 1;
@@ -328,7 +340,7 @@
 
     .tab_panels .tabs li{
         padding: 8px 0;
-    }
+    } */
     .panel .img_grid .img_column .project_img{
         height: 250px;
     }
@@ -506,6 +518,10 @@
 
 @media (max-width: 767px){
 
+    .container{
+        max-width: 100%;
+    }
+
     .studio_area, .blogs_listing_area {
         padding: 100px 0 60px;
     }
@@ -544,6 +560,17 @@
 
     .project_list .project_column{
         height: 350px;
+    }
+
+    .panel .innerTabs{
+        flex-wrap: wrap;
+    }
+
+    .panel .innerTabs li{
+        flex: 0 0 20%;
+        max-width: 20%;
+        margin-bottom: 25px;
+        text-align: center;
     }
 
     .introduction_area{
@@ -752,6 +779,36 @@
         margin-bottom: 100px;
     }
 
+    .functional_area .searchToggle{
+        display: block;
+    }
+
+    .functional_area .search_area{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px;
+        background: #fff;
+        z-index: 100;
+        box-shadow: 0 1px 5px #e6e6e6;
+        transition: 0.5s ease-in-out all;
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+
+    .functional_area .search_area.showSearchArea{
+        transform: scaleY(1);
+    }
+
+    .functional_area .search_area input{
+        width: 100%;
+    }
+
+    .functional_area .search_area svg{
+        right: 15px;
+    }
+
     .blogs_flex_area .blog_column{
         flex: 0 0 50%;
         max-width: 50%;
@@ -876,6 +933,10 @@
 
     .project_details_content .project_left_detail .project_description {
         line-height: 26px;
+    }
+
+    .panel .innerTabs{
+        margin-bottom: 50px;
     }
 }
 
@@ -1098,6 +1159,11 @@
 }
 
 @media (max-width: 480px){
+
+    .blogs_listing_area .container{
+        padding: 0;
+    }
+
     .news_column .news_img{
         height: 180px;
     }
@@ -1122,5 +1188,15 @@
     .readMore{
         width: 102px;
         font-size: 13px;
+    }
+
+    .panel .innerTabs li{
+        flex: 0 0 35%;
+        max-width: 35%;
+        font-size: 13px;
+    }
+
+    .panel .innerTabs{
+        margin-bottom: 35px;
     }
 }

@@ -27,7 +27,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 ol, ul, li {
 	list-style: none;
@@ -46,7 +46,7 @@ table {
 }
 
 .sec_header h3{
-	font-family: 'Outfit', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
 	line-height: 26px;
 	font-weight: 300;
@@ -75,7 +75,7 @@ table {
 	visibility: hidden;
 }
 
-.loading_time{
+.indexLoader{
 	display: none;
 	opacity: 0;
 	visibility: hidden;
@@ -100,7 +100,7 @@ table {
 
 
 
-.loading_time.showWeb{
+.indexLoader.showWeb{
 	display: block;
 	opacity: 1;
 	visibility: visible;
@@ -198,10 +198,14 @@ nav.showNav{
 .firstLink a, .lastLink a{
 	text-decoration: none;
 	color: #383336;
-	font-family: 'Outfit', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 95px;
 	font-weight: 800;
 	text-transform: uppercase;
+}
+
+.firstLink a:hover, .lastLink a:hover{
+	color: #E30016;
 }
 
 .middleLinks{
@@ -227,11 +231,15 @@ nav.showNav{
 .middleLinks li a{
 	text-decoration: none;
 	color: #383336;
-	font-family: 'Outfit', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 28px;
 	font-weight: 400;
 	line-height: 46px;
 	text-transform: uppercase;
+}
+
+.middleLinks li a:hover{
+	color: #E30016;
 }
 
 .middleLinks li:not(:last-child){
@@ -348,11 +356,15 @@ nav.showNav{
 #home_slider .owl-stage-outer .owl-stage .owl-item .item .slider-content .slider-text a{
 	text-decoration: none;
 	color: #fff;
-	font-family: 'Outfit', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 95px;
-	font-weight: 800;
+	font-weight: 400;
 	text-transform: uppercase;
 }
+
+/* #home_slider .owl-stage-outer .owl-stage .owl-item .item .slider-content .slider-text a:hover{
+	color: #E30016;
+} */
 
 #home_slider .owl-dots{
 	margin-top: 0;
@@ -453,7 +465,7 @@ nav.showNav{
 }
 
 .introduction_area .intro_txt h3{
-	font-family: 'Outfit', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 38px;
 	line-height: 62px;
 	text-align: center;
@@ -461,7 +473,7 @@ nav.showNav{
 }
 
 .introduction_area .intro_txt p{
-	font-family: 'Outfit', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
 	line-height: 31px;
 	color: #414141;
@@ -494,7 +506,7 @@ nav.showNav{
 
 
 #feature_slider .owl-stage-outer .owl-stage .owl-item .item .feature_text{
-	font-family: 'Outfit', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
 	line-height: 26px;
 	font-weight: 300;
@@ -561,7 +573,8 @@ nav.showNav{
 	transition: 0.2s ease-in all;
 }
 
-.project_list .project_column:nth-child(2n+2).animationDelay1{
+.project_list .project_column:nth-child(2n+2).animationDelay1,
+.project_list .project_column:nth-child(3n+2).animationDelay1{
 	animation-delay: 0.2s;
 }
 .project_list .project_column:nth-child(3n+3).animationDelay2{
@@ -736,10 +749,16 @@ nav.showNav{
 
 /* Project Page Css */
 .project_listing_area{
-	padding: 150px 0 100px;
+	padding: 140px 0 100px;
 }
 
+.project_listing_area .sec_header h3{
+	text-align: center;
+}
 
+.tab_panels{
+	margin-top: 60px;
+}
 
 .tab_panels .tabs{
 	display: -webkit-box;
@@ -750,7 +769,7 @@ nav.showNav{
 	-webkit-justify-content: space-between;
     -webkit-box-pack: justify;
     justify-content: space-between;
-	margin-bottom: 80px;
+	margin-bottom: 30px;
 	padding: 0 15px;
 }
 
@@ -760,25 +779,71 @@ nav.showNav{
 	cursor: pointer;
 	color: #000;
 	position: relative;
+	flex: 0 0 50%;
+	max-width: 50%;
+	text-align: center;
+	padding: 10px;
+	transition: 0.5s ease-in-out all;
+	text-transform: uppercase;
 }
 
-.tab_panels .tabs li.active::after{
+.tab_panels .tabs li:hover{
+	color: #E30016;
+}
+
+.tab_panels .tabs li.active{
+	background: #E30016;
+	color: #fff;
+}
+
+.panel, .innerPanelArchitecture, .innerPanelCommercial{
+	display: none;
+}
+
+.panel.active, .innerPanelArchitecture.active, .innerPanelCommercial.active{
+	display: block;
+}
+
+.panel .innerTabs{
+	padding: 0 15px;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+	margin-bottom: 80px;
+}
+
+.panel .innerTabs li{
+	font-size: 14px;
+	margin: 0 15px;
+	position: relative;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.panel .innerTabs li.active{
+	color: #E30016;
+}
+
+.panel .innerTabs li.active::after{
 	content: '';
 	position: absolute;
 	width: 100%;
 	height: 1px;
 	background: #E30016;
 	left: 0;
-	bottom: 0;
-	display: block;
+	bottom: -10px;
 }
 
-.panel{
-	display: none;
-}
-
-.panel.active{
-	display: block;
+.panel .innerTabs li:hover{
+	color: #E30016;
 }
 
 .panel .img_grid{
@@ -986,7 +1051,7 @@ nav.showNav{
 
 /* Studio Css */
 .studio_area{
-	padding: 150px 0 100px;
+	padding: 140px 0 100px;
 }
 
 .inner_our_principal_partner, .inner_our_award{
@@ -1202,6 +1267,21 @@ nav.showNav{
 	flex: 0 0 25%;
 	max-width: 25%;
 	margin-bottom: 50px;
+}
+
+.team_partners .individual_column:nth-child(3n+2).animationDelay1,
+.team_partners .individual_column:nth-child(2n+2).animationDelay1,
+.team_partners .individual_column:nth-child(4n+2).animationDelay1{
+	animation-delay: 0.2s;
+}
+
+.team_partners .individual_column:nth-child(3n+3).animationDelay2,
+.team_partners .individual_column:nth-child(4n+3).animationDelay2{
+	animation-delay: 0.4s;
+}
+
+.team_partners .individual_column:nth-child(4n+4).animationDelay3{
+	animation-delay: 0.6s;
 }
 
 .team_partners .individual_column .partner_img{
@@ -1472,19 +1552,28 @@ nav.showNav{
 	box-shadow: none;
 }
 
+.contact_img_area img{
+	width: 100%;
+}
+
 /* News Area Css */
 .news_announcement_area{
-	padding: 180px 0 80px;
+	padding: 140px 0 80px;
 }
 
 .news_announcement_area .sec_header{
-	margin-bottom: 100px;
+	margin-bottom: 70px;
 }
 
 .news_announcement_area .sec_header h3{
 	text-align: center;
 }
 
+.news_announcement_area .functional_area{
+	justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+	-webkit-box-pack: end;
+}
 
 .news_flex_area{
 	display: -webkit-box;
@@ -1503,6 +1592,21 @@ nav.showNav{
 	max-width: 33.33%;
 	margin-bottom: 60px;
 	padding: 0 15px;
+}
+
+.news_flex_area .news_column:nth-child(3n+2).animationDelay1,
+.news_flex_area .news_column:nth-child(2n+2).animationDelay1,
+.news_flex_area .news_column:nth-child(4n+2).animationDelay1{
+	animation-delay: 0.2s;
+}
+
+.news_flex_area .news_column:nth-child(3n+3).animationDelay2,
+.news_flex_area .news_column:nth-child(4n+3).animationDelay2{
+	animation-delay: 0.4s;
+}
+
+.news_flex_area .news_column:nth-child(4n+4).animationDelay3{
+	animation-delay: 0.6s;
 }
 
 .news_column .news_img{
@@ -1668,15 +1772,95 @@ nav.showNav{
 
 /* Blogs Css */
 .blogs_listing_area{
-	padding: 150px 0 100px;
+	padding: 140px 0 100px;
 }
 
 .blogs_listing_area .sec_header{
-	margin-bottom: 100px;
+	margin-bottom: 70px;
 }
 
 .blogs_listing_area .sec_header h3{
 	text-align: center;
+}
+
+.functional_area{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	-webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+	padding: 0 15px;
+	margin-bottom: 50px;
+}
+
+.functional_area .blog_sort select{
+	border: none;
+	color: #000;
+	border-bottom: 1px solid #000;
+	border-radius: 0;
+	padding: 0;
+	width: 160px;
+	font-weight: 300;
+}
+
+.functional_area .blog_sort select:focus{
+	border: none;
+	border-bottom: 1px solid #000;
+	box-shadow: none;
+	outline: none;
+}
+
+.functional_area .search_area{
+	position: relative;
+}
+
+.functional_area .search_area input{
+	border: none;
+	color: #000;
+	border-bottom: 1px solid #000;
+	border-radius: 0;
+	padding: 10px 0;
+	width: 340px;
+	font-weight: 300;
+}
+
+.functional_area .search_area input:focus{
+	border: none;
+	border-bottom: 1px solid #000;
+	box-shadow: none;
+	outline: none;
+}
+
+.functional_area .search_area svg{
+	font-size: 24px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.functional_area .searchToggle{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	-webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	display: none;
+}
+
+.functional_area .searchToggle svg{
+	font-size: 24px;
+	cursor: pointer;
 }
 
 .blogs_flex_area{
@@ -1740,7 +1924,7 @@ nav.showNav{
 .blogs_flex_area  .blog_content .blog_name,
 .blogs_flex_area  .blog_content .blog_name a{
 	font-size: 18px;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 25px;
 	color: #414141;
 	text-decoration: none;
@@ -1949,9 +2133,14 @@ nav.showNav{
     justify-content: center;
 }
 
+.inner_main_career_info .career_company_content .sec_header{
+	animation-delay: 0.2s;
+}
+
 .inner_main_career_info .career_company_content .career_para{
 	margin-top: 20px;
 	width: 80%;
+	animation-delay: 0.4s;
 }
 
 .inner_main_career_info .career_company_content .career_para p{
@@ -2137,6 +2326,31 @@ nav.showNav{
 	padding: 0 20px;
 	border-right: 1px solid #E30016;
 	margin-bottom: 30px;
+}
+
+.career_success_story .sucess_story_points ul li:nth-child(1){
+	animation-delay: 0.2s;
+}
+.career_success_story .sucess_story_points ul li:nth-child(2){
+	animation-delay: 0.4s;
+}
+.career_success_story .sucess_story_points ul li:nth-child(3){
+	animation-delay: 0.6s;
+}
+.career_success_story .sucess_story_points ul li:nth-child(4){
+	animation-delay: 0.8s;
+}
+.career_success_story .sucess_story_points ul li:nth-child(5){
+	animation-delay: 1s;
+}
+.career_success_story .sucess_story_points ul li:nth-child(6){
+	animation-delay: 1.2s;
+}
+.career_success_story .sucess_story_points ul li:nth-child(7){
+	animation-delay: 1.4s;
+}
+.career_success_story .sucess_story_points ul li:nth-child(8){
+	animation-delay: 1.6s;
 }
 
 .career_success_story .sucess_story_points ul li:nth-child(1),

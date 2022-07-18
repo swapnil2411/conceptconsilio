@@ -9,11 +9,14 @@ $(document).ready(function() {
    
     setTimeout(() => {
       $('.preloader_area').addClass('hidePreloader');
-      $('main').addClass('showWeb');
+      $('.indexLoader').addClass('showWeb');
       new WOW().init();
     }, 7000);
 
-   
+   //Search Toggle
+   $('.searchToggle').on('click', function(){
+    $('.functional_area .search_area').toggleClass('showSearchArea')
+   })
 
     $('.nav-toggler').on('click', function(){
       $('header').toggleClass('showHeader');
@@ -65,11 +68,38 @@ $(document).ready(function() {
               $(this).addClass('active');
           })
       })
-  })
+    })
+
+    $('.panel .innerTabsArchitecture li').on('click', function(){
+      var budgetPanelShow = $(this).attr('rel');
+      $(this).addClass('active').siblings().removeClass('active');
+      $('.innerPanelArchitecture.active').fadeOut(500, function(){
+          $(this).removeClass('active');
+          $('#' + budgetPanelShow).fadeIn(500, function(){
+              $(this).addClass('active');
+          })
+      })
+      
+    })
+
+    $('.panel .innerTabsCommercial li').on('click', function(){
+      var budgetPanelShow = $(this).attr('rel');
+      $(this).addClass('active').siblings().removeClass('active');
+      $('.innerPanelCommercial.active').fadeOut(500, function(){
+        $(this).removeClass('active');
+        $('#' + budgetPanelShow).fadeIn(500, function(){
+            $(this).addClass('active');
+        })
+      })
+      
+    })
+
+    
 
   $('.project_toggle').on('click', function(){
     $('.tab_panels .tabs').toggleClass('showTabs');
   })
+
 
   
   var projectSlider = $('#project_detail_slider');
@@ -112,25 +142,48 @@ $(document).ready(function() {
       })
     })
 
+    if (screenSize <= 600){
+      $('.team_partners .individual_column:nth-child(2n+2)').addClass('animationDelay1');
+    }
+
+    if (screenSize > 600 && screenSize <= 767){
+      $('.team_partners .individual_column:nth-child(3n+2)').addClass('animationDelay1');
+      $('.team_partners .individual_column:nth-child(3n+3)').addClass('animationDelay2');
+    }
+
     if (screenSize <= 767) {
       //alert("1680 reached")
       $('.blogs_flex_area .blog_column:nth-child(2n+2)').addClass('animationDelay1');
+      $('.news_flex_area .news_column:nth-child(2n+2)').addClass('animationDelay1');
       $('.project_list .project_column:nth-child(2n+2)').addClass('animationDelay1');
     }
 
     if (screenSize >= 768 && screenSize <= 1679) {
       //alert("1680 reached")
       $('.blogs_flex_area .blog_column:nth-child(3n+2)').addClass('animationDelay1');
-      $('.project_list .project_column:nth-child(2n+2)').addClass('animationDelay1');
       $('.blogs_flex_area .blog_column:nth-child(3n+3)').addClass('animationDelay2');
+      $('.news_flex_area .news_column:nth-child(3n+2)').addClass('animationDelay1');
+      $('.news_flex_area .news_column:nth-child(3n+3)').addClass('animationDelay2');
+      $('.project_list .project_column:nth-child(3n+2)').addClass('animationDelay1');
+      $('.team_partners .individual_column:nth-child(4n+2)').addClass('animationDelay1');
+      $('.team_partners .individual_column:nth-child(4n+3)').addClass('animationDelay2');
+      $('.team_partners .individual_column:nth-child(4n+4)').addClass('animationDelay3');
+
     }
 
     
     if (screenSize >= 1680) {
       //alert("1680 reached")
       $('.blogs_flex_area .blog_column:nth-child(4n+2)').addClass('animationDelay1');
-      $('.project_list .project_column:nth-child(3n+3)').addClass('animationDelay2')
       $('.blogs_flex_area .blog_column:nth-child(4n+3)').addClass('animationDelay2');
       $('.blogs_flex_area .blog_column:nth-child(4n+4)').addClass('animationDelay3');
+      $('.news_flex_area .news_column:nth-child(4n+2)').addClass('animationDelay1');
+      $('.news_flex_area .news_column:nth-child(4n+3)').addClass('animationDelay2');
+      $('.news_flex_area .news_column:nth-child(4n+4)').addClass('animationDelay3');
+      $('.project_list .project_column:nth-child(3n+2)').addClass('animationDelay1');
+      $('.project_list .project_column:nth-child(3n+3)').addClass('animationDelay2');
+      $('.team_partners .individual_column:nth-child(4n+2)').addClass('animationDelay1');
+      $('.team_partners .individual_column:nth-child(4n+3)').addClass('animationDelay2');
+      $('.team_partners .individual_column:nth-child(4n+4)').addClass('animationDelay3');
     }
 })
