@@ -164,7 +164,7 @@ $(document).ready(function() {
       $('.blogs_flex_area .blog_column:nth-child(3n+3)').addClass('animationDelay2');
       $('.news_flex_area .news_column:nth-child(3n+2)').addClass('animationDelay1');
       $('.news_flex_area .news_column:nth-child(3n+3)').addClass('animationDelay2');
-      $('.project_list .project_column:nth-child(3n+2)').addClass('animationDelay1');
+      $('.project_list .project_column:nth-child(2n+2)').addClass('animationDelay1');
       $('.team_partners .individual_column:nth-child(4n+2)').addClass('animationDelay1');
       $('.team_partners .individual_column:nth-child(4n+3)').addClass('animationDelay2');
       $('.team_partners .individual_column:nth-child(4n+4)').addClass('animationDelay3');
