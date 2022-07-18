@@ -56,6 +56,18 @@ table {
 	margin-bottom: 10px;
 }
 
+::-webkit-scrollbar{
+	width: 10px;
+}
+
+::-webkit-scrollbar-track{
+	background: #e6e6e6;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #E30016;
+}
+
 
 /* Loading Main Content */
 .preloader_area{
