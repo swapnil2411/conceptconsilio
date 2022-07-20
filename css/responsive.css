@@ -9,7 +9,7 @@
     } */
 
     .sec_header h3 {
-        font-size: 24px;
+        font-size: 18px;
         line-height: 30px;
         margin-bottom: 20px;
     }
@@ -19,7 +19,8 @@
     }
 
     .middleLinks li a{
-        font-size: 45px;
+        font-size: 40px;
+        line-height: 52px;
     }
 
     .firstLink a,
@@ -29,18 +30,18 @@
     }
 
     .introduction_area .intro_txt h3 {
-        font-size: 48px;
-        line-height: 72px;
+        font-size: 44px;
+        line-height: 74px;
     }
 
     .introduction_area .intro_txt p {
-        font-size: 24px;
-        line-height: 44px;
-        width: 85%;
+        font-size: 18px;
+        line-height: 40px;
+        width: 68%;
     }
 
     #feature_slider .owl-stage-outer .owl-stage .owl-item .item .feature_text{
-        font-size: 20px;
+        font-size: 18px;
         line-height: 30px;
     }
 
@@ -74,13 +75,14 @@
     }
 
     .principal_partner_content p, .our_award_content p{
-        font-size: 26px;
-        line-height: 46px;
+        font-size: 18px;
+        line-height: 34px;
+        width: 75%;
     }
 
     .principal_partner_content a, .our_award_content a{
-        font-size: 26px;
-        line-height: 36px;
+        font-size: 18px;
+        line-height: 32px;
     }
 
     .youtube_video iframe{
@@ -96,7 +98,7 @@
     }
 
     .accordion_card .accordion_header h3{
-        font-size: 22px;
+        font-size: 18px;
         line-height: 38px;
     }
 
@@ -124,17 +126,22 @@
         font-size: 18px;
     }
 
+    .blogs_details_content .blog_details_left p{
+        font-size: 18px;
+        line-height: 28px;
+    }
+
     .news_column .news_content .news_date,
     .news_column .news_content .news_para{
-        font-size: 20px;
-        line-height: 32px;
+        font-size: 18px;
+        line-height: 30px;
     }
 
     .inner_introduction_pricipal_partner .introduction_pricipal_partner_content p,
     .inner_principals_main .left_pricipal_content,
     .inner_principals_main .right_pricipal_content{
-        font-size: 24px;
-        line-height: 40px;
+        font-size: 18px;
+        line-height: 36px;
     }
 
     .our_team_area .our_team_content p{
@@ -159,21 +166,24 @@
     }
 
     .news_details_content p {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 18px;
+        line-height: 30px;
     }
 
     .news_details_gallary .img_gallary_column{
         height: 425px;
     }
+    
 
     .tab_panels .tabs li {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 30px;
+        flex: 0 0 25%;
+        max-width: 25%;
     }
 
     .project_left_detail .project_description{
-        font-size: 24px;
+        font-size: 18px;
         line-height: 38px;
     }
 
@@ -184,10 +194,14 @@
 
     .project_right_detail .info_content .locality,
     .project_right_detail .info_content .size,
-    .project_right_detail .info_content .yr,
+    .project_right_detail .info_content .yr{
+        font-size: 16px;
+        line-height: 26px;
+    }
+
     .floor_plan_area .team_credit{
-        font-size: 19px;
-        line-height: 30px;
+        font-size: 18px;
+        line-height: 26px;
     }
 
     .career_form form .form_element input::placeholder,
@@ -201,7 +215,7 @@
     .office_list span a,
     .enquiry_para,.contact_form form input::placeholder,
     .contact_form form button{
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .contact_description .phone span:nth-child(1), .contact_description .email span:nth-child(1),
@@ -221,7 +235,11 @@
     
 
     .contact_form form input{
-        margin-bottom: 22px;
+        margin-bottom: 25px;
+    }
+
+    .career_form form .form_element{
+        margin-bottom: 30px;
     }
 
     .career_success_story .career_success_header h3 {
@@ -229,13 +247,14 @@
         font-size: 60px;
     }
 
+
     .career_success_story .sucess_story_points ul li {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 28px;
     }
 
     .inner_footer{
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .footer_right_sec .social_link ul li{
@@ -252,7 +271,16 @@
 
 @media (max-width: 1366px){
     .middleLinks li a{
-        font-size: 36px;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .home_red a{
+        margin-bottom: 80px;
+    }
+
+    .middleLinks {
+        margin-bottom: 90px;
     }
 
     .middleLinks li:not(:last-child) a{
@@ -297,6 +325,10 @@
     .career_success_story .sucess_story_points ul li{
         font-size: 16px;
         padding: 0 10px;
+    }
+
+    .news_details_content h3{
+        font-size: 32px;
     }
 }
 
@@ -567,6 +599,18 @@
     .container{
         max-width: 100%;
     }
+    .hoverImg{
+        display: none;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    .home_red a,
+    .middleLinks{
+        margin-bottom: 50px;
+    }
 
     header{
         width: 100vw;
@@ -677,6 +721,7 @@
     .inner_our_award .our_award_content{
         flex: 0 0 100%;
         max-width: 100%;
+        text-align: center;
     }
 
     .inner_our_principal_partner .principal_partner_content,
@@ -757,6 +802,8 @@
     .principal_partner_content p, .our_award_content p, .principal_partner_content a, .our_award_content a{
         font-size: 14px;
         line-height: 26px;
+        width: 85%;
+        margin: auto;
     }
 
     .inner_principals_main .left_principal_main{
@@ -1239,6 +1286,10 @@
         padding-left: 10px !important;
         border-left: 2px solid #E30016 !important;
         margin-bottom: 20px;
+    }
+
+    .principal_partner_content p, .our_award_content p, .principal_partner_content a, .our_award_content a{
+        width: 100%;
     }
 }
 

@@ -32,6 +32,12 @@ $(document).ready(function() {
       $(this).css('display','none');
     })
 
+    // menu hover image changes
+    $('.home_red a').on('mouseover', function(){
+      var $showImg = $(this).attr('data-src');
+      $('.hoverImg img').attr('src', $showImg);
+    })
+
     var slider = $('#home_slider');
     slider.owlCarousel({
       margin: 10,
