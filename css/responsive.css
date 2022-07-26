@@ -178,8 +178,7 @@
     .tab_panels .tabs li {
         font-size: 18px;
         line-height: 30px;
-        flex: 0 0 25%;
-        max-width: 25%;
+        margin: 0 45px;
     }
 
     .project_left_detail .project_description{
